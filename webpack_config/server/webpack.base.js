@@ -22,7 +22,6 @@ exec(`rm -rf ${config.distPath}/server/${APP_LANGUAGE}`)
 
 const definePluginArgs = {
 	'process.env.BROWSER': JSON.stringify(false),
-	'process.env.PORT': JSON.stringify(PORT),
 	'process.env.JWT_SECRET': JSON.stringify(JWT_SECRET),
 	'process.env.SENTRY_DSN': JSON.stringify(SENTRY_DSN),
 	'process.env.DIST_PATH': JSON.stringify(DIST_PATH)

@@ -6,7 +6,7 @@ import path from 'path'
 import i18n from '../i18n'
 import manifest from './assets/manifest'
 
-function ternary (a, b) {
+function ternary(a, b) {
 	return a ? a : b
 }
 
@@ -29,8 +29,6 @@ const srcCommonPath = path.join(srcPath, './common') // = "/src/common"
 const DIST_PATH = ternary(process.env.DIST_PATH, path.join(distPath, './client', APP_LANGUAGE))
 const JWT_SECRET = ternary(process.env.JWT_SECRET, 'secret')
 const SENTRY_DSN = ternary(process.env.SENTRY_DSN)
-const PORT = ternary(process.env.PORT, 4000)
-
 
 export default {
 	title: 'React-Semantic.UI-Starter',
@@ -46,7 +44,6 @@ export default {
 	DIST_PATH,
 	JWT_SECRET,
 	SENTRY_DSN,
-	PORT,
 	// It's better to define pathes in one file
 	// and then use everywhere across app
 	srcPath,
@@ -55,7 +52,7 @@ export default {
 	rootPath,
 	// text for WebpackBannerPlugin
 	banner:
-		'MIT License. Copyright (c) 2017 Vladimir Metnew All Rights Reserved. Repo: https://github.com/Metnew/react-semantic.ui-starter',
+	'MIT License. Copyright (c) 2017 Vladimir Metnew All Rights Reserved. Repo: https://github.com/Metnew/react-semantic.ui-starter',
 	// your manifest.json
 	manifest
 }
