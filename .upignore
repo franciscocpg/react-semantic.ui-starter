@@ -1,0 +1,13 @@
+.*
+_scripts
+i18n
+jest_config
+.babelrc
+*.md
+/LICENSE
+/docs
+!/**/dist
+/src
+/postcss.config.js
+/static
+/webpack_config

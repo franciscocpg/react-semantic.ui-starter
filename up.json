@@ -1,0 +1,6 @@
+{
+  "name": "react-semantic-ui-starter",
+  "hooks": {
+    "build": "npm i && DIST_PATH=./dist/client/en npm run build && rm -rf node_modules && npm i --production"
+  }
+}
